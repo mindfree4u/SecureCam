@@ -60,7 +60,7 @@ public class Page_15300 extends AppCompatActivity {
         focus_Txt.setText(String.valueOf(CFG_Video.nSaturation));
 
         float x = combinedSurfaceView.getScaleX();
-        enlargement_Txt.setText(String.valueOf(x));
+        enlargement_Txt.setText("1");
 
         CFG_Video.nBrightness = Math.max(0, CFG_Video.nBrightness);
         brightness_Txt.setText(String.valueOf(CFG_Video.nBrightness));
@@ -125,7 +125,7 @@ public class Page_15300 extends AppCompatActivity {
 
                 enlargement_Txt.setText(String.valueOf(enlarge_no));
 
-                if( enlarge_no == 1.0) {
+                if( enlarge_no == 1) {
                     EnlargementMinusBtn.setAlpha(0.2f);
                 } else {
                     EnlargementMinusBtn.setAlpha(1.0f);
@@ -140,7 +140,7 @@ public class Page_15300 extends AppCompatActivity {
                 float x = combinedSurfaceView.getScaleX();
                 float y = combinedSurfaceView.getScaleY();
 
-                if (enlarge_no < 10.0) {
+                if (enlarge_no < 10) {
                     combinedSurfaceView.setScaleX((float) (x * 1.2));
                     combinedSurfaceView.setScaleY((float) (y * 1.2));
                     enlarge_no +=1;
