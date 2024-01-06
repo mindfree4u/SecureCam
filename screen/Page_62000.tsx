@@ -65,7 +65,7 @@ const Page_62000 = ({ navigation}) => {
 		</TouchableOpacity>
 
 		<Text style={styles.text1}>정말로 탈퇴하시겠습니까?</Text>
-		<Text style={styles.text2}>지금 탈퇴하시면 서버에 저장하신 녹화영상을{'\n'}더이상 이용하실 수 없습니다.</Text>
+		<Text style={styles.text2}>지금 탈퇴하면 서버에 저장된 녹화영상을{'\n'}더이상 이용할 수 없습니다.</Text>
 
 		<CheckBox style={{position: 'absolute', left: 20, top: 226,}}
 			  tintColors={{ true: '#4543BA' }}
