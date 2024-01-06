@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SecureCam</string>
+    <string-array name="quality_options">
+        <item>고화질   </item>
+        <item>저화질   </item>
+    </string-array>
+</resources>

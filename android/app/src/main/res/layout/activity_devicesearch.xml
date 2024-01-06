@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="21.1dp">
+
+        <ImageView
+            android:layout_width="16.17dp"
+            android:layout_height="19.8dp"
+            android:src="@drawable/arrow"
+            android:gravity="top"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/back_button" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="36.17dp"
+            android:fontFamily="@font/notosanskr"
+            android:gravity="center"
+            android:layout_marginTop="-12dp"
+            android:text="장치 추가"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:typeface="normal" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/device_search_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/device_search_button"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/dialog_background"
+        android:divider="@android:color/white"
+        android:dividerHeight="3dp" />
+
+<!-->
+    <Button
+        android:id="@+id/device_search_button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:text="장치검색 시작"
+        android:textAllCaps="false" />
+-->
+
+</LinearLayout>
