@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:addStatesFromChildren="true"
+    android:orientation="vertical"
+    tools:context=".Page_61100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="-15dp"
+            android:layout_marginRight="36.17dp"
+            android:fontFamily="@font/notosanskr"
+            android:gravity="center"
+            android:text="파일상세정보"
+            android:textColor="#222222"
+            android:textSize="18sp"
+            android:typeface="normal" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="1dp"
+            android:scaleType="centerCrop" />
+
+        <SurfaceView
+            android:id="@+id/browser_video"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp">
+
+            <ImageView
+                android:id="@+id/playPauseButton"
+                android:layout_width="58dp"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:text="재생"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:weightSum="100">
+
+            <Button
+                android:id="@+id/prev_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@drawable/rectangle_line_ok"
+                android:drawableLeft="@drawable/prev"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="이전"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+
+
+            <Button
+                android:id="@+id/next_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:background="@drawable/rectangle_line_ok"
+                android:drawableRight="@drawable/next"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="다음"
+                android:textAllCaps="false"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/notosanskr"
+                android:gravity="left"
+                android:lineHeight="16.71dp"
+                android:text="파  일  명 "
+                android:textStyle="bold"
+                android:textColor="#222222"
+                android:textSize="14sp"
+                android:typeface="normal" />
+            <TextView
+                android:id="@+id/file_name"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/notosanskr"
+                android:gravity="left"
+                android:lineHeight="16.71dp"
+                android:text=""
+                android:textColor="#222222"
+                android:textSize="14sp"
+                android:typeface="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/pic_date_title"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:fontFamily="@font/notosanskr"
+                android:gravity="left"
+                android:lineHeight="16.71dp"
+                android:text="녹화일시 "
+                android:textStyle="bold"
+                android:textColor="#222222"
+                android:textSize="14sp"
+                android:typeface="normal" />
+            <TextView
+                android:id="@+id/pic_date"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="24dp"
+                android:fontFamily="@font/notosanskr"
+                android:gravity="left"
+                android:lineHeight="16.71dp"
+                android:text=""
+                android:textColor="#222222"
+                android:textSize="14sp"
+                android:typeface="normal" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/video_len_title"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:fontFamily="@font/notosanskr"
+                android:gravity="left"
+                android:lineHeight="16.71dp"
+                android:text="영상길이 "
+                android:textStyle="bold"
+                android:textColor="#222222"
+                android:textSize="14sp"
+                android:typeface="normal" />
+            <TextView
+                android:id="@+id/video_len"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="24dp"
+                android:fontFamily="@font/notosanskr"
+                android:gravity="left"
+                android:lineHeight="16.71dp"
+                android:text=""
+                android:textColor="#222222"
+                android:textSize="14sp"
+                android:typeface="normal" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/delete_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@drawable/liveview_set_button"
+            android:layout_marginTop="40dp"
+            android:text="파일삭제"
+            android:textColor="#4543BA"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+</LinearLayout>

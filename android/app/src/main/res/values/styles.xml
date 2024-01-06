@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:editTextBackground">@drawable/rn_edit_text_material</item>
+    </style>
+
+    <style name="MyDatePickerDialogTheme"></style>
+
+
+	<style name="MyDatePickerStyleTheme" parent="@android:style/Theme.Holo.Light.Dialog">
+		<item name="colorAccent"> #00ff00 </item>
+
+		<item name="android:datePickerStyle">@style/MyDatePickerStyle</item>
+		<item name="android:colorPrimary"> #00ff00 </item>
+		<item name="android:colorPrimaryDark"> #00ff00 </item>
+		<item name="android:colorAccent"> #00ff00 </item>
+		<item name="android:backgroundTint"> #00ff00 </item>
+		<!-- <item name="android:calendarTextColor"> #00ff00 </item> -->
+
+
+	</style>
+
+	<style name="MyDatePickerStyle">
+		<item name="android:calendarTextColor"> #00ff00 </item>
+	</style>
+</resources>

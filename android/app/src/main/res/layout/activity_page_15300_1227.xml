@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:orientation="vertical"
+    tools:context=".Page_15300">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="21.1dp">
+
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_marginTop="5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_horizontal"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="-15dp"
+            android:layout_marginRight="36.17dp"
+            android:fontFamily="@font/notosanskr"
+            android:gravity="center"
+            android:text="라이브뷰 영상조정"
+            android:textColor="#222222"
+            android:textSize="18sp"
+            android:typeface="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="270dp">
+        <SurfaceView
+            android:id="@+id/combined_surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:padding="30dp"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_line_ok">
+
+            <ImageButton
+                android:id="@+id/focus_minus_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/minus" />
+
+            <TextView
+                android:id="@+id/focus_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:fontFamily="@font/notosanskr"
+                android:text="초점"
+                android:textColor="#4D4D4D"
+                android:textSize="14sp"
+                android:typeface="normal" />
+
+            <ImageButton
+                android:id="@+id/focus_plus_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/plus" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_line_ok">
+            <ImageButton
+                android:id="@+id/enlargement_minus_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/minus" />
+
+            <TextView
+                android:id="@+id/enlargement_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="확대"
+                android:fontFamily="@font/notosanskr"
+                android:textColor="#4D4D4D"
+                android:textSize="14sp"
+                android:typeface="normal" />
+
+            <ImageButton
+                android:id="@+id/enlargement_plus_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/plus" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:padding="30dp"
+        android:weightSum="2" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_line_ok">
+
+            <ImageButton
+                android:id="@+id/bright_minus_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/minus" />
+
+            <TextView
+                android:id="@+id/brightness_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:fontFamily="@font/notosanskr"
+                android:text="밝기"
+                android:textColor="#4D4D4D"
+                android:textSize="14sp"
+                android:typeface="normal" />
+
+            <ImageButton
+                android:id="@+id/bright_plus_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/plus" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rectangle_line_ok">
+            <ImageButton
+                android:id="@+id/contrast_minus_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/minus" />
+
+            <TextView
+                android:id="@+id/contrast_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="대비"
+                android:fontFamily="@font/notosanskr"
+                android:textColor="#4D4D4D"
+                android:textSize="14sp"
+                android:typeface="normal" />
+
+            <ImageButton
+                android:id="@+id/contrast_plus_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/plus" />
+        </LinearLayout>
+    </LinearLayout>    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:background="#000000" />
+
+</LinearLayout>
