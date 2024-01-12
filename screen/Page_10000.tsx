@@ -789,7 +789,6 @@ Rectangle1:{
     alignItems: 'center',
     marginRight: 7,
     marginLeft: 10,
-    backgroundColor: '#F5F8FD',
     borderRadius: 5,
 },
 
@@ -855,7 +854,8 @@ rectangle0: {
     position: 'absolute', left: 24, right: 24, 
     height: 64,
     backgroundColor: '#FFFFFF',
-	borderColor: '#000000',
+	borderColor: '#D6D9EB',
+	borderWidth: 1,
     borderRadius: 10,
 },
 
@@ -864,8 +864,8 @@ center_bar: {
     height: 64,
 	width: 1,
     backgroundColor: '#EDEDED',
-	borderColor: '#EDEDED',
-	borderWidth: 1,
+	borderColor: '#D6D9EB',
+	borderWidth: 0.5,
     borderRadius: 1,
 },
 
