@@ -183,7 +183,7 @@ text1: {
 	fontSize: 16,
 	fontWeight: 700,
     lineHeight: 19,
-    color: '#828282',
+    color: '#322E7F',
 
 },
 
