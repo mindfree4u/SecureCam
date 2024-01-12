@@ -35,23 +35,23 @@ const Footer = ({ navigation, selectedIconIndex, setSelectedIconIndex}) => {
 	<View style={styles.container}>
 		<TouchableOpacity onPress={() => {navigation.navigate('Page_10000'); setSelectedIconIndex(0); }} style={{width: 50, marginLeft: 20}}>
 			
-			{ selectedIconIndex === 0 ? <Image source={require('../images/short_line.png')} style={[styles.short_line]}/> : <Text style={{height: 12}}></Text>}
-			{ selectedIconIndex === 0 ? <Image source={require('../images/home.png')} style={{width: 30, height: 30, left: 10}}/> : <Image source={require('../images/home.png')} style={{width: 30, height: 30, left: 10, opacity:0.5}}/>  }
-			<Text style={[styles.text1, selectedIconIndex === 0 ? {color:'#000000'} : {color:'#9190B2'}]}>홈</Text>
+			{ selectedIconIndex === 0 ? <Image source={require('../images/short_line.png')} style={[styles.short_line, {left:34}]}/> : <Text style={{height: 12}}></Text>}
+			{ selectedIconIndex === 0 ? <Image source={require('../images/home.png')} style={{width: 30, height: 30, left: 45}}/> : <Image source={require('../images/home.png')} style={{width: 30, height: 30, left: 45, opacity:0.5}}/>  }
+			<Text style={[styles.text1, {left: 53}, selectedIconIndex === 0 ? {color:'#000000'} : {color:'#9190B2'}]}>홈</Text>
 		</TouchableOpacity>
 		
 		
 		 <TouchableOpacity onPress={() => {navigation.navigate('Page_50000'); setSelectedIconIndex(4); }} style={{width: 50}}>
-			{ selectedIconIndex === 4 ? <Image source={require('../images/short_line.png')} style={[styles.short_line]}/> : <Text style={{height: 12}}></Text>}
-			{ selectedIconIndex === 4 ? <Image source={require('../images/message.png')} style={{width: 30, height: 30, left:10 }}/> : <Image source={require('../images/message.png')} style={{width: 30, height: 30, left:10, opacity: 0.5 }}/> }
-			<Text style={[styles.text1,{left: 8}, selectedIconIndex === 4 ? {color:'#000000'} : {color:'#9190B2'}]}>알림</Text>
+			{ selectedIconIndex === 4 ? <Image source={require('../images/short_line.png')} style={[styles.short_line, {left:9}]}/> : <Text style={{height: 12}}></Text>}
+			{ selectedIconIndex === 4 ? <Image source={require('../images/message.png')} style={{width: 30, height: 30, left:21 }}/> : <Image source={require('../images/message.png')} style={{width: 30, height: 30, left:21, opacity: 0.5 }}/> }
+			<Text style={[styles.text1,{left: 22}, selectedIconIndex === 4 ? {color:'#000000'} : {color:'#9190B2'}]}>알림</Text>
 		</TouchableOpacity>
 		
 		
 		<TouchableOpacity onPress={() => {navigation.navigate('Page_60000'); setSelectedIconIndex(5); }} style={{width: 50, marginRight: 20}}>
-			{ selectedIconIndex === 5 ?  <Image source={require('../images/short_line.png')} style={[styles.short_line]}/> : <Text style={{height: 12}}></Text>}
-			{ selectedIconIndex === 5 ?  <Image source={require('../images/my.png')} style={{width: 30, height: 30, left:8}}/> : <Image source={require('../images/my.png')} style={{width: 30, height: 30, left:8, opacity: 0.5}}/>}
-			<Text style={[styles.text1, {left: -13, width: 100},  selectedIconIndex === 5 ? {color:'#000000'} : {color:'#9190B2'}]}>마이페이지</Text>
+			{ selectedIconIndex === 5 ?  <Image source={require('../images/short_line.png')} style={[styles.short_line, {left: -8}]}/> : <Text style={{height: 12}}></Text>}
+			{ selectedIconIndex === 5 ?  <Image source={require('../images/my.png')} style={{width: 30, height: 30, left: 3}}/> : <Image source={require('../images/my.png')} style={{width: 30, height: 30, left:3, opacity: 0.5}}/>}
+			<Text style={[styles.text1, {left: -15, width: 100},  selectedIconIndex === 5 ? {color:'#000000'} : {color:'#9190B2'}]}>마이페이지</Text>
 		</TouchableOpacity>
 
 	</View>
@@ -86,11 +86,11 @@ short_line: {
 },
 
 text1: {
-    fontFamily: 'Noto Sans KR',
+    fontFamily: 'Pretendard',
 	marginTop: 1,
     fontStyle: 'normal',
     fontWeight: 700,
-    fontSize: 16,
+    fontSize: 14,
     lineHeight: 18,
 	left:17
 },
