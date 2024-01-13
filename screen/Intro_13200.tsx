@@ -345,7 +345,7 @@ modal: {
 text5: {
     position: 'absolute', right: 45, top: 217,
     fontFamily: 'Inter', fontStyle: 'normal', fontWeight: 400, fontSize: 12,
-    lineHeight: 12.1,
+    lineHeight: 14.1,
     textAlign: 'center',
     color: '#008B27',
 },
