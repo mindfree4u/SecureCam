@@ -17,6 +17,7 @@ import Intro_12100 from './screen/Intro_12100';
 import Intro_13000 from './screen/Intro_13000';
 import Intro_13100 from './screen/Intro_13100';
 import Intro_13200 from './screen/Intro_13200';
+import Intro_13300 from './screen/Intro_13300';
 import Page_10000 from './screen/Page_10000';
 import Page_11000 from './screen/Page_11000';
 import Page_12000 from './screen/Page_12000';
@@ -121,6 +122,7 @@ return () => clearTimeout(hideSplash);
             <Stack.Screen name="Intro_13000" component={ Intro_13000} options={{ headerShown: false }}/>
             <Stack.Screen name="Intro_13100" component={ Intro_13100} options={{ headerShown: false }}/>
             <Stack.Screen name="Intro_13200" component={ Intro_13200} options={{ headerShown: false }}/>
+            <Stack.Screen name="Intro_13300" component={ Intro_13300} options={{ headerShown: false }}/>
             <Stack.Screen name="Page_10000" component={Page_10000} options={{ headerShown: false }}/>
             <Stack.Screen name="Page_11000" component={Page_11000} options={{ headerShown: false }}/>
             <Stack.Screen name="Page_12000" component={Page_12000} options={{ headerShown: false }}/>
