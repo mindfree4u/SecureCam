@@ -68,7 +68,7 @@ public class Page_15300 extends AppCompatActivity {
         CFG_Video.nContrast = Math.max(0, CFG_Video.nContrast);
         contrast_Txt.setText(String.valueOf(CFG_Video.nContrast));
 
-        EnlargementMinusBtn.setAlpha(0.2f);
+        EnlargementMinusBtn.setAlpha(0.3f);
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -87,7 +87,7 @@ public class Page_15300 extends AppCompatActivity {
                 String vlu = String.format("%3s", String.valueOf(CFG_Video.nSaturation));
                 focus_Txt.setText(vlu);
                 if( CFG_Video.nSaturation == 0) {
-                    FocusMinusBtn.setAlpha(0.4f);
+                    FocusMinusBtn.setAlpha(0.3f);
                 } else {
                     FocusMinusBtn.setAlpha(1.0f);
                 }
@@ -103,7 +103,7 @@ public class Page_15300 extends AppCompatActivity {
                 mLiveModule17.SetConfig(NET_EM_CFG_OPERATE_TYPE.NET_EM_CFG_VIDEOIN_COLOR, 0, CFG_Video, 400, null, null);
                 focus_Txt.setText(String.valueOf(CFG_Video.nSaturation));
                 if( CFG_Video.nSaturation == 100) {
-                    FocusPlusBtn.setAlpha(0.4f);
+                    FocusPlusBtn.setAlpha(0.3f);
                 } else {
                     FocusPlusBtn.setAlpha(1.0f);
                 }
@@ -120,13 +120,13 @@ public class Page_15300 extends AppCompatActivity {
                 if (enlarge_no > 1) {
                     combinedSurfaceView.setScaleX((float) (x / 1.2));
                     combinedSurfaceView.setScaleY((float) (y / 1.2));
-                    enlarge_no -=1;
+                    enlarge_no -= 1;
                 }
 
                 enlargement_Txt.setText(String.valueOf(enlarge_no));
 
                 if( enlarge_no == 1) {
-                    EnlargementMinusBtn.setAlpha(0.2f);
+                    EnlargementMinusBtn.setAlpha(0.3f);
                 } else {
                     EnlargementMinusBtn.setAlpha(1.0f);
                 }
@@ -143,11 +143,11 @@ public class Page_15300 extends AppCompatActivity {
                 if (enlarge_no < 10) {
                     combinedSurfaceView.setScaleX((float) (x * 1.2));
                     combinedSurfaceView.setScaleY((float) (y * 1.2));
-                    enlarge_no +=1;
+                    enlarge_no += 1;
                 }
                 enlargement_Txt.setText(String.valueOf(enlarge_no));
                 if( enlarge_no == 10) {
-                    EnlargementPlusBtn.setAlpha(0.2f);
+                    EnlargementPlusBtn.setAlpha(0.3f);
                 } else {
                     EnlargementPlusBtn.setAlpha(1.0f);
                 }
@@ -162,7 +162,7 @@ public class Page_15300 extends AppCompatActivity {
                 mLiveModule17.SetConfig(NET_EM_CFG_OPERATE_TYPE.NET_EM_CFG_VIDEOIN_COLOR, 0, CFG_Video, 400, null, null);
                 brightness_Txt.setText(String.valueOf(CFG_Video.nBrightness));
                 if( CFG_Video.nBrightness == 0) {
-                    BrightMinusBtn.setAlpha(0.4f);
+                    BrightMinusBtn.setAlpha(0.3f);
                 } else {
                     BrightMinusBtn.setAlpha(1.0f);
                 }
@@ -177,7 +177,7 @@ public class Page_15300 extends AppCompatActivity {
                 mLiveModule17.SetConfig(NET_EM_CFG_OPERATE_TYPE.NET_EM_CFG_VIDEOIN_COLOR, 0, CFG_Video, 400, null, null);
                 brightness_Txt.setText(String.valueOf(CFG_Video.nBrightness));
                 if( CFG_Video.nBrightness == 100) {
-                    BrightPlusBtn.setAlpha(0.4f);
+                    BrightPlusBtn.setAlpha(0.3f);
                 } else {
                     BrightPlusBtn.setAlpha(1.0f);
                 }
@@ -191,8 +191,8 @@ public class Page_15300 extends AppCompatActivity {
                 CFG_Video.nContrast = Math.max(0, CFG_Video.nContrast - 10);
                 mLiveModule17.SetConfig(NET_EM_CFG_OPERATE_TYPE.NET_EM_CFG_VIDEOIN_COLOR, 0, CFG_Video, 400, null, null);
                 contrast_Txt.setText(String.valueOf(CFG_Video.nContrast));
-                if( CFG_Video.nBrightness == 0) {
-                    ContrastMinusBtn.setAlpha(0.4f);
+                if( CFG_Video.nContrast == 0) {
+                    ContrastMinusBtn.setAlpha(0.3f);
                 } else {
                     ContrastMinusBtn.setAlpha(1.0f);
                 }
@@ -206,8 +206,8 @@ public class Page_15300 extends AppCompatActivity {
                 CFG_Video.nContrast = Math.min(100, CFG_Video.nContrast + 10);
                 mLiveModule17.SetConfig(NET_EM_CFG_OPERATE_TYPE.NET_EM_CFG_VIDEOIN_COLOR, 0, CFG_Video, 400, null, null);
                 contrast_Txt.setText(String.valueOf(CFG_Video.nContrast));
-                if( CFG_Video.nBrightness == 100) {
-                    ContrastPlusBtn.setAlpha(0.4f);
+                if( CFG_Video.nContrast == 100) {
+                    ContrastPlusBtn.setAlpha(0.3f);
                 } else {
                     ContrastPlusBtn.setAlpha(1.0f);
                 }
