@@ -215,7 +215,7 @@ duplicationCheck = () => {
      <View style={styles.root}>
  
             <TouchableOpacity onPress={() => navigation.navigate('Intro_10000')} style={styles.vector}>
-                <Image source={require('../images/arrow.png')} style={{width: 20, height: 20}}/>
+
             </TouchableOpacity>
             <Text style={styles.회원가입}>회원가입</Text>
 			<View style={[styles.top_line]} />
