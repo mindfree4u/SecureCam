@@ -41,6 +41,7 @@
     "react-native-screens": "^3.20.0",
     "react-native-shadow": "^1.2.2",
     "react-native-splash-screen": "^3.3.0",
+    "react-native-svg": "^14.1.0",
     "react-native-svg-uri": "^1.2.3",
     "react-native-toggle-element": "^2.0.1",
     "react-native-vector-icons": "^9.2.0",
